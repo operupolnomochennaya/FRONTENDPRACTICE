@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ModalWindow</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Модальное окно</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button id="openModalBtn">Открыть форму</button>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModalBtn">&times;</span>
+    <h2>Заявка на регистрацию для мероприятия</h2>
+
+    <form>
+      <label>Тип мероприятия *</label>
+      <select required>
+        <option value="">Выберите вид мероприятия</option>
+        <option>Конференция</option>
+        <option>Встреча</option>
+      </select>
+
+      <label>ФИО *</label>
+      <input type="text" placeholder="Введите ФИО" required>
+
+      <label>Имейл *</label>
+      <input type="email" placeholder="Введите имейл" required>
+
+      <label>Номер телефона *</label>
+      <input type="tel" placeholder="+7 777 77 77" required>
+
+      <button type="button" class="add-friend">+ Добавить друга</button>
+
+      <label>Предпочитаемый вид связи *</label>
+      <select required>
+        <option value="">Выберите предпочитаемый вид связи</option>
+        <option>Телефон</option>
+        <option>Email</option>
+      </select>
+
+      <div class="buttons">
+        <button type="button" class="back-btn">Назад</button>
+        <button type="submit" class="next-btn">Дальше</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
